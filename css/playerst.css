@@ -1,0 +1,19 @@
+@import "../css/toppagelogo.css";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    height: 80px;
+    background-color: rgb(74, 74, 230);
+}
+
+.navbar ul li a:hover {
+    background-color: rgb(12, 12, 67);
+}
+
+#playerst {
+    color: #fff;
+}

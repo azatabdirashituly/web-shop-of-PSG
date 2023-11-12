@@ -1,0 +1,182 @@
+@import "../css/toppagelogo.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container-fluid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    height: calc(100vh - 80px);
+    transition: transform .5s;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+.navbar {
+    height: 80px;
+    background-color: rgb(74, 74, 230);
+}
+
+.navbar ul li a:hover {
+    background-color: darkgray;
+}
+.navbar ul li #kits {
+    text-decoration: underline;
+}
+
+.logo img {
+    width: 60px;
+    margin-left: 10px;
+}
+#boots{
+    color: #fff;
+}
+
+.image-container .product__image {
+    padding: 0;
+}
+
+.listProduct {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    height: 500px;
+}
+
+.item{
+    position: relative;
+    padding: 40px;
+    width: 320px;
+    border: 3px solid #000;
+    border-radius: 30px;
+}
+.item img {
+    width: 140%;
+    margin-left: -20%;
+    margin-right: -40%;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    max-width: none;
+
+    transition: .3s;
+}
+.item img:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.price button {
+    position: absolute;
+    padding: 14px 25px;
+    background-color: red;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    right: 10px;
+    bottom: 13px;
+}
+.price .itemPrice {
+    position: absolute;
+    color: #000;
+    font-weight: bold;
+    padding: 14px 20px;
+    border-radius: 15px;
+    bottom: 13px;
+}
+.price .itemPrice .origPrice{
+    text-decoration: line-through;
+}
+
+.item h4 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+.item p {
+    padding: 0;
+    margin: 0;
+}
+.item .prti2 {
+    margin-top: 26px;
+}
+.item .prti3 {
+    margin-top: 20px;
+}
+.basket {
+    margin-right: 30px;
+}
+.basket a{
+    color: #fff;
+}
+
+.cardTab {
+    width: 350px;
+    background-color: rgb(182, 182, 190);
+    color: #fff;
+    position: fixed;
+    inset: 0 -350px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCard .cardTab {
+    inset: 0 0 0 auto;
+}
+body.showCard .container {
+    transform: translateX(-200px);
+}
+.cardTab h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 35px;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.cardTab .btn {
+    display: flex;
+    justify-content: space-between;
+}
+.cardTab .btn button {
+    border: none;
+    background-color: red;
+    color: #000;
+    cursor: pointer;
+}
+.cardTab .btn .close {
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+.cardTab .btn .checkOut {
+    background-color: red;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+.cardTab .listCard img {
+    width: 100%;
+}
+.cardTab .listCard .items {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 30px;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCard .items:nth-child(odd){
+    background-color:rgb(91, 159, 169);
+}
+.listCard {
+    overflow: auto;
+}
+.listCard::-webkit-scrollbar{
+    width: 0;
+}

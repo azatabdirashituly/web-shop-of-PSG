@@ -1,0 +1,43 @@
+@import "../css/toppagelogo.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+.navbar {
+    height: 80px;
+    background-color: rgb(74, 74, 230);
+}
+
+.navbar ul li a:hover {
+    background-color: darkgray;
+}
+
+.logo img {
+    width: 60px;
+}
+#kits {
+    color: #fff;
+}
+.container-image {
+    height: calc(100vh - 80px);
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.fullwidthImg img{
+    height: 250px;
+    width: 100%;
+}
+.container-image .carousel {
+    text-align: center;
+}
+.container-image .carousel .carousel-inner{
+    width: auto;
+    height: 600px;
+}

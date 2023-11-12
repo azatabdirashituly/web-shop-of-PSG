@@ -1,0 +1,27 @@
+@import "../css/block1.css";
+@import "../css/block2.css";
+@import "../css/toppagelogo.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body::-webkit-scrollbar{
+    width: 0;
+}
+
+.navbar {
+    height: 80px;
+    background-color: rgb(74, 74, 230);
+}
+.navbar .navbar-nav {
+    color: #fff;
+}
+.navbar ul li a:hover {
+    background-color: rgb(12, 12, 67);
+}
+
+#home {
+    color: #fff;
+}

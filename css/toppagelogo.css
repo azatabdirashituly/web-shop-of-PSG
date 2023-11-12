@@ -1,0 +1,42 @@
+.flip-container {
+    perspective: 1000px;
+    margin-left: 30px;
+  }
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    text-align: center;
+    line-height: 60px; /* Выровнять текст вертикально внутри блока */
+    color: #333; /* Цвет текста */
+    font-size: 0.8em; /* Размер шрифта */
+  }
+  
+  .flip-container:hover .flipper {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-container, .front, .back {
+    width: 150px; /* Ширина блока */
+    height: 60px; /* Высота блока */
+  }
+
+.navbar-nav a:hover {
+  background-color: #bab5b5;
+}

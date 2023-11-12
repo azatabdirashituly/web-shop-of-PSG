@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Nike Mercurial Superfly 9 Academy",
+        "price": "$99",
+        "image": "../img/boot1.png",
+        "title": "Instantly tilt the pitch in Marcus Rashford's version of the Superfly 9 Elite"
+    },
+    {
+        "id": 2,
+        "name": "Nike Phantom",
+        "price": "$99",
+        "image": "../img/boot2.png",
+        "title": "Featuring NikeSkin, a mesh touch zone for enhanced ball control and an agility plate that's designed to swerve"
+    },
+    {
+        "id": 3,
+        "name": "Nike Roshe Run Print",
+        "price": "$99",
+        "image": "../img/boot3.png",
+        "title": "Express your creative side with an array of vibrant, eye-catching colours that are tuned for your distinct, brash style."
+    }
+]
